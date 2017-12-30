@@ -37,9 +37,7 @@ class User < ApplicationRecord
   private
 
   def ensure_authentication_token
-    if authentication_token.blank?
-      self.authentication_token = generate_authentication_token
-    end
+    self.authentication_token = generate_authentication_token if authentication_token.blank?
   end
 
   def generate_authentication_token
