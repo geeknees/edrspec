@@ -61,4 +61,5 @@ RSpec.configure do |config|
 
   # Use Devise helpers in tests
   config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include RequestSpecHelper, type: :request
 end
