@@ -20,10 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'capybara', '~> 2.13.0'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.6.0'
-  gem 'selenium-webdriver'
   gem 'spring-commands-rspec'
 end
 
@@ -35,6 +33,14 @@ group :development do
   gem 'spring-commands-rubocop'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  # Or use poltergeist and PhantomJS as an alternative to Selenium/Chrome
+  # gem 'poltergeist', '~> 1.15.0'
+  gem 'launchy', '~> 2.4.3'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
