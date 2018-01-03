@@ -42,6 +42,8 @@ group :test do
   # gem 'poltergeist', '~> 1.15.0'
   gem 'launchy', '~> 2.4.3'
   gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers', branch: 'rails-5'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
