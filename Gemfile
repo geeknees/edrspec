@@ -41,6 +41,7 @@ group :test do
   # Or use poltergeist and PhantomJS as an alternative to Selenium/Chrome
   # gem 'poltergeist', '~> 1.15.0'
   gem 'launchy', '~> 2.4.3'
+  gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers', branch: 'rails-5'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
